@@ -1,0 +1,50 @@
+@font-face {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/raleway-v28-latin_cyrillic-regular.woff2') format('woff2'),
+       url('../fonts/raleway-v28-latin_cyrillic-regular.woff') format('woff');
+}
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+body {
+  min-width: 320px;
+  background-color: #241D1C;
+  font-family: Raleway, sans-serif;
+  font-feature-settings: "pnum" on, "lnum" on; /* выравнивает цифры по баз линии*/
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #F6F3E3;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.visualy-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+.container {
+  max-width: 1312px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+@media (max-width: 560px) {
+  .container {
+    padding: 0 24px;
+  }
+}
+

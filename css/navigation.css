@@ -1,0 +1,25 @@
+.navigation__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.navigation__link {
+  font-size: 14px;
+  line-height: 1;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (max-width: 428px) {
+  .navigation__list {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+  .navigation__link {
+    font-size: 12px;
+  }
+}
